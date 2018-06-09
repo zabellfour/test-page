@@ -55,11 +55,9 @@ $nav-disabled-link-hover-color:     transparent;
 $pagination-color:                  $gray-light;
 $pagination-bg:                     transparent;
 $pagination-border:               #ddd;
-
 $pagination-hover-color:            rgba($pagination-color, .8);
 $pagination-hover-bg:               transparent;
-$pagination-hover-border:           rgba($pagination-border, .8);
-
+$pagination-hover-border:           $gray;
 $pagination-active-color:           $scarlet;
 $pagination-active-bg:              transparent;
 $pagination-active-border:          $gray;
@@ -92,27 +90,21 @@ $navbar-default-link-hover-bg:      transparent;
 $navbar-default-link-active-color:  $scarlet;
 $navbar-default-link-active-bg:     transparent;
 $navbar-default-link-disabled-color:rgba($gray, .5);
-$navbar-default-link-disabled-bg:   transparent !default;
+$navbar-default-link-disabled-bg:   transparent;
 
 
 // Navbar toggle
-$navbar-default-toggle-hover-bg:           #ddd !default;
-$navbar-default-toggle-icon-bar-bg:        #888 !default;
-$navbar-default-toggle-border-color:       #ddd !default;
+$navbar-default-toggle-hover-bg:    #ddd;
+$navbar-default-toggle-icon-bar-bg: #888;
+$navbar-default-toggle-border-color:#ddd;
 
 
-//== Thumbnails
-// $thumbnail-padding:           4px !default;
-// //** Thumbnail background color
-// $thumbnail-bg:                $body-bg !default;
-// //** Thumbnail border color
-// $thumbnail-border:            #ddd !default;
-// //** Thumbnail border radius
-// $thumbnail-border-radius:     $border-radius-base !default;
-
-// //** Custom text color for thumbnail captions
-// $thumbnail-caption-color:     $text-color !default;
-// //** Padding around the thumbnail caption
-// $thumbnail-caption-padding:   9px !default;
+// Thumbnails
+$thumbnail-padding:                  0;
+$thumbnail-bg:                       transparent;
+$thumbnail-border:                   #eee;
+$thumbnail-border-radius:            0;
+$thumbnail-caption-color:            $black;
+$thumbnail-caption-padding:          15px 10px 0 10px;
 
 @import '../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap.scss';

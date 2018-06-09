@@ -1,0 +1,128 @@
+.thumbnail {
+    text-align: center;
+    background-color: transparent;
+    @include animate(background-color);
+    margin-bottom: 50px;
+    @include media('<widescreen') {
+      margin-bottom: 40px;
+    }
+    @include media('<desktop') {
+      margin-bottom: 30px;
+    }
+    @include media('<tablet') {
+      margin-bottom: 25px;
+    }
+    &:hover {
+        background-color: #f6f6f6;
+        .img-holder {
+            &:after {
+                opacity: 1;
+                visibility: visible;
+            }
+            &:before{
+              opacity: 0;
+            }
+            .btn {
+                opacity: 1;
+                visibility: visible;
+                transform: translate3d(-50%, -50%, 0) scale(1);
+            }
+        }
+        .btn-holder .btn{
+          background-color: $scarlet;
+          color: $white;
+        }
+    }
+    .h4{
+      text-transform: uppercase;
+      display: inline-block;
+      font-size: 14px;
+    }
+    .img-holder {
+        padding: 30px 0;
+        position: relative;
+        z-index: 10;
+        &:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba($black, .8);
+            opacity: 0;
+            visibility: hidden;
+            @include animate( visibility opacity);
+        }
+        &:before{
+          content: '';
+          height: 2px;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          width: 10px;
+          margin: 0 auto;
+          background-color: $scarlet;
+          opacity: 1;
+          @include animate(opacity);
+        }
+        .btn {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate3d(-50%, -50%, 0) scale(0);
+            z-index: 11;
+            opacity: 0;
+            visibility: hidden;
+            @include animate(transform visibility opacity color background-color);
+        }
+        img {
+            vertical-align: top;
+            max-width: 100%;
+        }
+    }
+    .price{
+      color:$scarlet;
+      font-weight: bold;
+      margin-bottom: 27px;
+      line-height: 1;
+      font-size: 16px;
+    }
+      .old-price{
+      padding: 0 5px;
+      color:$gray-light;
+      text-decoration:line-through;
+    }
+    a{
+      opacity: 1;
+      display: inline-block;
+      &:hover{
+        opacity: .8;
+      }
+      @include animate(opacity);
+    }
+    .h4{
+      margin-bottom: 10px;
+      max-width: 100%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      margin-bottom: 0;
+      line-height: 1;
+
+    }
+    .btn-holder{
+      display: flex;
+      justify-content: center;
+      .btn{
+        @include animate(color background-color opacity);
+        &:hover{
+          opacity: .7;  
+        }
+      }
+      .btn:nth-child(2n){
+        margin-left: -1px;
+      }
+    }
+}

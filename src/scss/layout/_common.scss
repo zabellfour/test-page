@@ -1,0 +1,20 @@
+.btn-group{
+  margin-bottom: 39px;
+  width: 100%;
+  @include media('<widescreen') {
+    margin-bottom: 30px;
+  }
+  @include media('<desktop') {
+    margin-bottom: 20px;
+  }
+
+}
+.goods-list{
+  margin-bottom: 75px;
+  @include media('<widescreen') {
+    margin-bottom: 50px;
+  }
+  @include media('<desktop') {
+    margin-bottom: 30px;
+  }
+}

@@ -1,7 +1,22 @@
 #header {
     padding: 52px 0 55px;
+    background-color: $white;
+    position: relative;
+    @include media('<widescreen') {
+        padding: 30px 0;
+    }
+    @include media('<desktop') {
+        padding: 10px 0;
+    }
+    @include media('<tablet') {
+        padding: 5px 0;
+    }
     .navbar {
         border: none;
+        &-toggle{
+            border-radius: 0;
+            border-color: $gray;
+        }
     }
     .navbar-brand {
         margin-top: 2px;
@@ -9,20 +24,54 @@
     .caret {
         width: 5px;
         height: 5px;
-        margin-left: 2px;
+        margin: 2px;
         vertical-align: middle;
         border: none;
         transform: rotate(-135deg) translateY(50%);
         border-top: 1px solid currentColor;
         border-left: 1px solid currentColor;
     }
-            .open .caret{
-                transform: rotate(-45deg) translateY(50%);
-            }
     .navbar-nav {
         padding: 9px 10px 0 0;
+        @include media('<desktop') {
+            padding-top: 7px;
+        }
+        @include media('<tablet') {
+            padding: 0;
+            text-align: right;
+        }
+        .dropdown-menu{
+            text-align: right;
+            @include media('<tablet') {
+                padding-right: 5px;
+            }
+            .divider{
+                @include media('<tablet') {
+                    margin: 3px 0;
+                }
+            }
+            li{
+                
+                padding:0;
+    
+            }
+            a{
+                padding: 0 10px;
+                font-size: 12px;
+                @include media('<tablet') {
+                    line-height: 1.45;
+                }
+            }
+        }
         li {
             padding: 0 10px;
+            @include media('<widescreen') {
+                padding: 0 8px;
+            }
+            @include media('<desktop') {
+                padding: 0 5px;
+             
+            }
             &.active a:before {
                 content: '';
                 width: 10px;
@@ -31,6 +80,9 @@
                 left: 2px;
                 height: 2px;
                 background-color: #e24545;
+                @include media('<tablet') {
+                    display: none;
+                }
             }
         }
         a {
@@ -38,11 +90,29 @@
             font-weight: bold;
             font-size: 13px;
             text-transform: uppercase;
+            @include animate(color);
+            @include media('<desktop') {
+                font-size: 11px;
+            }
+            @include media('<tablet') {
+                line-height: 1.2;
+                padding-top:5px;
+                padding-bottom: 5px;
+            }
         }
     }
     .navbar-form {
         position: relative;
         padding-top: 9px;
+        @include media('<desktop') {
+            padding-top: 7px;
+        }
+        .opener{
+            cursor: pointer;
+            @include media('<tablet') {
+                display: none;
+            }
+        }
         .form-wrapper {
             border: 1px solid $gray-light-2;
             border-radius: 5px;
@@ -50,6 +120,9 @@
             position: absolute;
             top: 100%;
             right: 0;
+            @include media('<tablet') {
+                height: auto !important;
+            }
         }
         .form-group {
             padding: 10px;
@@ -66,6 +139,7 @@
                 padding: 2px;
                 font-size: 10px;
                 font-weight: 800;
+                min-width: 20px;
             }
         }
     }
@@ -77,6 +151,19 @@
         display: flex;
         align-items: center;
         font-size-adjust: 15px;
+        @include media('<widescreen') {
+            margin: 0 0 0 30px
+        }
+        @include media('<desktop') {
+            margin: 0 0 0 15px;
+            padding: 5px 15px;
+            font-size: 12px;
+        }
+        @include media('<tablet') {
+            position: absolute;
+            right: 80px;
+            top:5px;
+        }
         position: relative;
         .total {
             max-width: 130px;
@@ -102,6 +189,10 @@
             top: 50%;
             transform: translate(50%, -50%);
             font-size: 11px;
+            @include animate(background-color);
+            &:hover{
+                background-color: $scarlet;
+            }
             &:after {
                 content: '';
                 position: absolute;

@@ -2,18 +2,36 @@
   position: relative;
   color: $black;
   font-size: 26px;
-  padding-bottom: 20px;
+  padding-bottom: 0.8em;
   display: inline-block;
+  opacity: 1;
+  @include animate(opacity);
+  @include media('<desktop') {
+    font-size: 22px
+  }
+  @include media('<tablet') {
+    font-size: 20px;
+  }
+  @include media('<phone') {
+    font-size: 18px;
+  }
+
+  &:hover{
+    opacity: .85;
+  }
   .mark-red {
       color: $scarlet;
       &:before {
           content: '';
           position: absolute;
           left: 0;
-          top: 26px;
+          top: 1em;
           height: 2px;
           background-color: currentColor;
           width: 9px;
+          @include media('<tablet') {
+            top:1.1em;
+          }
       }
   }
   &-bottom {
@@ -21,9 +39,9 @@
     bottom: -5px;
     left: 2px;
     right: 0;
-    font-size: 12px;
+    font-size: 0.46em;
     color: #444;
     text-transform: uppercase;
-    letter-spacing: 9px;
+    letter-spacing: 0.75em;
   }
 }
