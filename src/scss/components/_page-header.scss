@@ -1,0 +1,17 @@
+.page-header{
+  background-image: url('../images/page-header-bg.jpg');
+  background-size: cover;
+  padding: 55px 0;
+  margin:0 0 55px;
+  background-position: 50% 50%;
+  &-row{
+    display: flex;
+    justify-content: space-between;
+  }
+  .breadcrumb{
+    margin-bottom: 0;
+  }
+  .h1{
+    margin-bottom: 0;
+  }
+} 

@@ -1,0 +1,29 @@
+.logo-text {
+  position: relative;
+  color: $black;
+  font-size: 26px;
+  padding-bottom: 20px;
+  display: inline-block;
+  .mark-red {
+      color: $scarlet;
+      &:before {
+          content: '';
+          position: absolute;
+          left: 0;
+          top: 26px;
+          height: 2px;
+          background-color: currentColor;
+          width: 9px;
+      }
+  }
+  &-bottom {
+    position: absolute;
+    bottom: -5px;
+    left: 2px;
+    right: 0;
+    font-size: 12px;
+    color: #444;
+    text-transform: uppercase;
+    letter-spacing: 9px;
+  }
+}
