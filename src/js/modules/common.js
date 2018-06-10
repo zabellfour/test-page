@@ -1,4 +1,3 @@
-
 const common = {
     matchHeight: function() {
         let $el = $('.sh-item');
@@ -22,24 +21,37 @@ const common = {
                 dots: false,
                 nav: true,
                 loop: true,
-                items:1,
+                items: 1,
                 autoplay: true,
-                responsive:{
-                    320:{
-                        items:1,
-                    
+                responsive: {
+                    320: {
+                        items: 1,
+
                     },
-                   480:{
-                        items:2,
+                    480: {
+                        items: 2,
                     },
-                    992:{
-                        items:3,
-       
+                    992: {
+                        items: 3,
+
                     },
-                    1200:{
-                        items:4,
-                   
+                    1200: {
+                        items: 4,
+
                     }
+                }
+            });
+        }
+    },
+    itemRemove: function() {
+        let $el = $('[data-remove]');
+        if ($el.length) {
+            let elList = document.getElementById('wishlist');
+            elList.addEventListener('click', (e) => {
+                let btn = e.target;
+                if (btn.hasAttribute("data-remove")){
+                    e.preventDefault();
+                    $(btn).closest('.thumbnail').closest('div[class^=col]').remove();
                 }
             });
         }

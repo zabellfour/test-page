@@ -80,7 +80,6 @@
                         <h1 class="h1">My wishlist</h1>
                         <ol class="breadcrumb">
                             <li><a href="#">Home</a></li>
-
                             <li class="active"> my wishlist</li>
                         </ol>
                     </div>
@@ -94,11 +93,11 @@
                         </div>
                     </div>
                 </div>
-                <section class="row goods-list">
+                <section class="row goods-list" id="wishlist">
                     <div class="col-lg-3 col-md-4 col-sm-6 xol-xs-12">
                         <div class="thumbnail">
                             <div class="img-holder sh-item">
-                                <button class="btn btn-default btn-white">remove from list</button>
+                                <button class="btn btn-default btn-white" data-remove>remove from list</button>
                                 <img src="assets/images/item-img1.jpg" alt="item image">
                             </div>
                             <div class="caption">
@@ -107,7 +106,7 @@
                                 </a>
                                 <p class="price text-center">$280.00</p>
                                 <div class="btn-holder">
-                                    <a href="#" class="btn btn-action" role="button"><i class="far fa-trash-alt"></i>   </a>
+                                    <a href="#" class="btn btn-action" data-remove role="button"><i class="far fa-trash-alt"></i>   </a>
                                     <a href="#" class="btn btn-action" role="button"><i class="fas fa-shopping-cart"></i>   </a>
                                 </div>
                             </div>
@@ -116,7 +115,7 @@
                     <div class="col-lg-3 col-md-4 col-sm-6 xol-xs-12">
                         <div class="thumbnail">
                             <div class="img-holder sh-item">
-                                <button class="btn btn-default btn-white">remove from list</button>
+                                <button class="btn btn-default btn-white" data-remove>remove from list</button>
                                 <img src="assets/images/item-img2.jpg" alt="item image">
                             </div>
                             <div class="caption">
@@ -125,7 +124,7 @@
                                 </a>
                                 <p class="price text-center">$550.00</p>
                                 <div class="btn-holder">
-                                    <a href="#" class="btn btn-action" role="button"><i class="far fa-trash-alt"></i>   </a>
+                                    <a href="#" class="btn btn-action" data-remove role="button"><i class="far fa-trash-alt"></i>   </a>
                                     <a href="#" class="btn btn-action" role="button"><i class="fas fa-shopping-cart"></i>   </a>
                                 </div>
                             </div>
@@ -134,7 +133,7 @@
                     <div class="col-lg-3 col-md-4 col-sm-6 xol-xs-12">
                         <div class="thumbnail">
                             <div class="img-holder sh-item">
-                                <button class="btn btn-default btn-white">remove from list</button>
+                                <button class="btn btn-default btn-white" data-remove>remove from list</button>
                                 <img src="assets/images/item-img3.jpg" alt="item image">
                             </div>
                             <div class="caption">
@@ -143,7 +142,7 @@
                                 </a>
                                 <p class="price text-center">$350.00</p>
                                 <div class="btn-holder">
-                                    <a href="#" class="btn btn-action" role="button"><i class="far fa-trash-alt"></i>   </a>
+                                    <a href="#" class="btn btn-action" role="button" data-remove><i class="far fa-trash-alt"></i>   </a>
                                     <a href="#" class="btn btn-action" role="button"><i class="fas fa-shopping-cart"></i>   </a>
                                 </div>
                             </div>
@@ -151,8 +150,8 @@
                     </div>
                     <div class="col-lg-3 col-md-4 col-sm-6 xol-xs-12">
                         <div class="thumbnail">
-                            <div class="img-holder sh-item">
-                                <button class="btn btn-default btn-white">remove from list</button>
+                            <div class="img-holder sh-item"> 
+                                <button class="btn btn-default btn-white" data-remove>remove from list</button>
                                 <img src="assets/images/item-img4.jpg" alt="item image">
                             </div>
                             <div class="caption">
@@ -161,7 +160,7 @@
                                 </a>
                                 <p class="price text-center">$350.00</p>
                                 <div class="btn-holder">
-                                    <a href="#" class="btn btn-action" role="button"><i class="far fa-trash-alt"></i>   </a>
+                                    <a href="#" class="btn btn-action" role="button" data-remove><i class="far fa-trash-alt"></i>   </a>
                                     <a href="#" class="btn btn-action" role="button"><i class="fas fa-shopping-cart"></i>   </a>
                                 </div>
                             </div>
@@ -170,7 +169,7 @@
                     <div class="col-lg-3 col-md-4 col-sm-6 xol-xs-12">
                         <div class="thumbnail">
                             <div class="img-holder sh-item">
-                                <button class="btn btn-default btn-white">remove from list</button>
+                                <button class="btn btn-default btn-white" data-remove>remove from list</button>
                                 <img src="assets/images/item-img5.jpg" alt="item image">
                             </div>
                             <div class="caption">
@@ -179,7 +178,7 @@
                                 </a>
                                 <p class="price text-center">$280.00 <span class="old-price">$649.00</span></p>
                                 <div class="btn-holder">
-                                    <a href="#" class="btn btn-action" role="button"><i class="far fa-trash-alt"></i>   </a>
+                                    <a href="#" class="btn btn-action" role="button" data-remove><i class="far fa-trash-alt"></i>   </a>
                                     <a href="#" class="btn btn-action" role="button"><i class="fas fa-shopping-cart"></i>   </a>
                                 </div>
                             </div>
@@ -188,7 +187,7 @@
                     <div class="col-lg-3 col-md-4 col-sm-6 xol-xs-12">
                         <div class="thumbnail">
                             <div class="img-holder sh-item">
-                                <button class="btn btn-default btn-white">remove from list</button>
+                                <button class="btn btn-default btn-white" data-remove>remove from list</button>
                                 <img src="assets/images/item-img6.jpg" alt="item image">
                             </div>
                             <div class="caption">
@@ -198,7 +197,7 @@
 
                                 <p class="price text-center">$350.00</p>
                                 <div class="btn-holder">
-                                    <a href="#" class="btn btn-action" role="button"><i class="far fa-trash-alt"></i>   </a>
+                                    <a href="#" class="btn btn-action" role="button" data-remove><i class="far fa-trash-alt"></i>   </a>
                                     <a href="#" class="btn btn-action" role="button"><i class="fas fa-shopping-cart"></i>   </a>
                                 </div>
                             </div>
@@ -207,7 +206,7 @@
                     <div class="col-lg-3 col-md-4 col-sm-6 xol-xs-12">
                         <div class="thumbnail">
                             <div class="img-holder sh-item">
-                                <button class="btn btn-default btn-white">remove from list</button>
+                                <button class="btn btn-default btn-white" data-remove>remove from list</button>
                                 <img src="assets/images/item-img7.jpg" alt="item image">
                             </div>
                             <div class="caption">
@@ -216,7 +215,7 @@
                                 </a>
                                 <p class="price text-center">$399.00</p>
                                 <div class="btn-holder">
-                                    <a href="#" class="btn btn-action" role="button"><i class="far fa-trash-alt"></i>   </a>
+                                    <a href="#" class="btn btn-action" role="button" data-remove><i class="far fa-trash-alt"></i>   </a>
                                     <a href="#" class="btn btn-action" role="button"><i class="fas fa-shopping-cart"></i>   </a>
                                 </div>
                             </div>
@@ -225,7 +224,7 @@
                     <div class="col-lg-3 col-md-4 col-sm-6 xol-xs-12">
                         <div class="thumbnail">
                             <div class="img-holder sh-item">
-                                <button class="btn btn-default btn-white">remove from list</button>
+                                <button class="btn btn-default btn-white" data-remove>remove from list</button>
                                 <img src="assets/images/item-img8.jpg" alt="item image">
                             </div>
                             <div class="caption">
@@ -234,7 +233,7 @@
                                 </a>
                                 <p class="price text-center">$550.00</p>
                                 <div class="btn-holder">
-                                    <a href="#" class="btn btn-action" role="button"><i class="far fa-trash-alt"></i>   </a>
+                                    <a href="#" class="btn btn-action" role="button" data-remove><i class="far fa-trash-alt"></i>   </a>
                                     <a href="#" class="btn btn-action" role="button"><i class="fas fa-shopping-cart"></i>   </a>
                                 </div>
                             </div>
@@ -303,21 +302,21 @@
         <div class="footer-top">
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-8">
+                    <div class="col-lg-8 col-md-7 col-sm-6">
                         <div class="contact-form">
                             <form class="form-horizontal validate-form">
+                                <label class="control-label">subscribe to latest smartphones
+                                    news & great deals we offer</label>
                                 <div class="form-group">
-                                    <label class="control-label col-sm-3">subscribe to latest smartphones
-                                news & great deals we offer</label>
                                     <div class="input-group">
-                                        <input type="email" class="form-control">
+                                        <input type="email" class="form-control" placeholder="Enter Your Email Address ..." required>
+                                        <button type="submit"><i class="far fa-envelope"></i></button>
                                     </div>
-                                    <button type="submit"><i class="far fa-envelope"></i></button>
                                 </div>
                             </form>
                         </div>
                     </div>
-                    <div class="sol-sm-4">
+                    <div class="col-lg-4 col-md-5 col-sm-6">
                         <ul class="social-networks">
                             <li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
                             <li><a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
@@ -333,30 +332,32 @@
         </div>
         <div class="footer-bottom">
             <div class="container">
-                <div class="copy">
-                    Copyright © 2015 <a href="#" target="_blank">codeitStore</a> All Rights Reserved.
-                </div>
-                <div class="pay-method">
-                    <ul>
-                        <li>
-                            <a href="#" target="_blank"><img src="assets/images/visa-electron.jpg" alt="Visa Electron"></a>
-                        </li>
-                        <li>
-                            <a href="#" target="_blank"><img src="assets/images/pay-pal.jpg" alt="PayPal"></a>
-                        </li>
-                        <li>
-                            <a href="#" target="_blank"><img src="assets/images/visa.jpg" alt="Visa"></a>
-                        </li>
-                        <li>
-                            <a href="#" target="_blank"><img src="assets/images/master.jpg" alt="Master Card"></a>
-                        </li>
-                        <li>
-                            <a href="#" target="_blank"><img src="assets/images/maestro.jpg" alt="Maestro"></a>
-                        </li>
-                        <li>
-                            <a href="#" target="_blank"><img src="assets/images/discover.jpg" alt="Discover"></a>
-                        </li>
-                    </ul>
+                <div class="bottom-wrapper">
+                    <div class="copy">
+                        Copyright © 2015 <a href="#" target="_blank">codeitStore</a> All Rights Reserved.
+                    </div>
+                 
+                        <ul class="pay-method" >
+                            <li>
+                                <a href="#" target="_blank"><img src="assets/images/visa-electron.jpg" alt="Visa Electron"></a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank"><img src="assets/images/pay-pal.jpg" alt="PayPal"></a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank"><img src="assets/images/visa.jpg" alt="Visa"></a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank"><img src="assets/images/master.jpg" alt="Master Card"></a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank"><img src="assets/images/maestro.jpg" alt="Maestro"></a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank"><img src="assets/images/discover.jpg" alt="Discover"></a>
+                            </li>
+                        </ul>
+                    
                 </div>
             </div>
         </div>

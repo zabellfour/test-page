@@ -117,6 +117,9 @@
       justify-content: center;
       .btn{
         @include animate(color background-color opacity);
+        i{
+          pointer-events: none;
+        }
         &:hover{
           opacity: .7;  
         }

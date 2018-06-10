@@ -1,0 +1,87 @@
+.contact-form {
+    .form-horizontal {
+        text-transform: uppercase;
+        font-size: 14px;
+        text-align: left;
+        display: flex;
+        margin-right: 15px;
+        @include media('<widescreen') {
+          flex-wrap: wrap;
+        }
+        @include media('<tablet') {
+          margin-right: 0;
+        }
+        .control-label {
+            text-align: left;
+            line-height: 1.3;
+            padding-top: 6px;
+            width: auto;
+            display: block;
+            margin-right: 30px;
+            @include media('<widescreen') {
+              width: 100%;
+              margin-bottom: 15px;
+              font-size: 12px;
+            }
+            @include media('<desktop') {
+            }
+        }
+        input {
+            width: 440px;
+            height: 50px;
+            font-size: 11px;
+            text-transform: none;
+            z-index: 1;
+            position: relative;
+            padding: 18px 40px 18px 18px;
+            border-color:#ccc;
+            box-shadow: none !important;
+            text-transform: uppercase;
+            @include media('<widescreen') {
+              width: 100%;
+              text-transform: uppercase;
+            }
+            @include placeholder {
+                color: #888;
+            }
+        }
+        button {
+            position: absolute;
+            right: 1px;
+            top: 1px;
+            bottom: 1px;
+            width: 56px;
+            background-color: transparent;
+            border: none;
+            line-height: 1;
+            color: #888;
+            z-index: 20;
+            font-size: 16 px;
+            @include animate(background-color);
+            &:hover {
+                background-color: rgba($white, .7);
+            }
+        }
+        .form-group {
+            margin-bottom: 0;
+            @include media('<widescreen') {
+              margin: 0;
+              width: 100%;
+            }
+            label.error {
+                position: absolute;
+                top: 100%;
+                left: 0;
+                font-size: 10px;
+                color:$scarlet;
+            }
+        }
+        .input-group {
+            width: 100%;
+            position: relative;
+            @include media('<tablet') {
+              margin-bottom: 20px;
+            }
+        }
+    }
+}

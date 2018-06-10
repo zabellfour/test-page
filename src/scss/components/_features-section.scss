@@ -25,10 +25,10 @@ padding: 40px 0;
             padding:0 20px;
             @include media('<tablet') {
               padding: 0 10px;
-            }
-            @include media('<phone') {
               display: flex;
               justify-content: center;
+            }
+            @include media('<phone') {
             }
             i {
                 font-size: 29px;

@@ -6,6 +6,7 @@ import common from './modules/common';
     common.carousel();
     common.matchHeight();
     common.validateForm();
+    common.itemRemove();
   });
 
 })(jQuery);

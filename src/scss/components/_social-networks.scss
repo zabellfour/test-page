@@ -1,0 +1,35 @@
+.social-networks{
+  @extend %listreset;
+  display: flex;
+  justify-content: flex-end;
+  
+  li{
+    
+    a{
+    width: 52px;
+    height: 50px;
+    font-size: 15px;
+    color:#999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border:1px solid #999;
+    margin-left: -1px;
+    background-color: transparent;
+    &:hover{
+      color:$white;
+      background-color: $scarlet;
+    }
+    @include animate(color backgrpund-color);
+    @include media('<widescreen') {
+      width: 44px;
+      height: 44px;
+      font-size: 13px;
+    }
+@include media('<tablet') {
+  width: 40px;
+  height: 40px;
+}
+    }
+  }
+}
