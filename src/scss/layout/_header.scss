@@ -122,6 +122,10 @@
             right: 0;
             @include media('<tablet') {
                 height: auto !important;
+                position: static;
+                padding: 0;
+                border: none;
+
             }
         }
         .form-group {
@@ -129,9 +133,19 @@
             width: 250px;
             display: inline-block;
             display: flex;
+            @include media('<tablet') {
+                width: 100%;
+                padding-left: 0;
+                padding-right: 0;
+            }
             input {
                 height: 30px;
-                ;
+                width: 167px;
+                @include media('<tablet') {
+                    flex-grow: 1;
+                    width: auto;
+                    width: 100%;
+                }
             }
             button {
                 flex-grow: 1;
@@ -140,6 +154,9 @@
                 font-size: 10px;
                 font-weight: 800;
                 min-width: 20px;
+                @include media('<tablet') {
+                    width: 40px;
+                }
             }
         }
     }
