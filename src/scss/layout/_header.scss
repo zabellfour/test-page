@@ -118,8 +118,8 @@
             position: absolute;
             top: 100%;
             right: 0;
-            display: block;
             @include media('<tablet') {
+                display: block;
                 height: auto !important;
                 position: static;
                 padding: 0;
