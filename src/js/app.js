@@ -5,6 +5,7 @@ import common from './modules/common';
   $(() => {
     common.carousel();
     common.matchHeight();
+    common.validateForm();
   });
 
 })(jQuery);

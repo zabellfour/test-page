@@ -1,6 +1,3 @@
-// This is an examples of simple export.
-//
-// You can remove or add your own function in this file.
 
 const common = {
     matchHeight: function() {
@@ -12,6 +9,12 @@ const common = {
             });
         }
     },
+    validateForm: function() {
+        let $el = $('.validate-form');
+        if ($el.length) {
+            $el.validate();
+        }
+    },
     carousel: function() {
         let $el = $('.owl-carousel');
         if ($el.length) {
@@ -19,7 +22,25 @@ const common = {
                 dots: false,
                 nav: true,
                 loop: true,
-                items:4
+                items:1,
+                autoplay: true,
+                responsive:{
+                    320:{
+                        items:1,
+                    
+                    },
+                   480:{
+                        items:2,
+                    },
+                    992:{
+                        items:3,
+       
+                    },
+                    1200:{
+                        items:4,
+                   
+                    }
+                }
             });
         }
     }
